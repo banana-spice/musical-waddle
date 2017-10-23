@@ -1,0 +1,24 @@
+/*Author: Victoria Braden
+Date: 10.30.2017
+file: styles.css
+*/
+
+html, body, h1, img, p, ul{
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	padding: 1em;
+	text-align: center;
+	height: 3em;
+}
+.contacts{
+	font-weight: bold;
+	font-size: 1.2em;
+	color: blue;
+	margin-top: 1em;
+}
+
+ul{
+	list-style-type: none;
+}
