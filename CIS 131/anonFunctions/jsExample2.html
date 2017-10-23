@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Anonymous Function</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <input type="text" id="firstName" />
+    <input type="button" id='printName' value='Display Input' />
+    <p id='displayName'>
+
+    </p>
+    <script>
+	/*
+      document.getElementById('printName').addEventListener('click', getName,false);
+      function getName(){
+        var inputBox = document.getElementById('firstName').value;
+        document.getElementById('displayName').innerHTML = inputBox;
+      }*/
+	  
+		$(document).ready(function(){
+			$("#printName").click(function(){
+				$("#displayName").text($("#firstName").val());
+			});
+		});
+
+
+
+    </script>
+  </body>
+</html>
