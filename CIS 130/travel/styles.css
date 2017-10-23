@@ -1,0 +1,239 @@
+/*	Victoria Braden
+	CIS 130
+	travel/styles.css
+	4/5/2017*/
+
+
+/*clear*/
+body, header, footer, ul, li, nav, .container, .column1, .column2, .column3, a, h1, h2, h3, img, p{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+/*Main Body*/
+body{
+	background-color: #8F8856;
+	background-image: url("images/bodybg.jpg");
+	background-repeat: no-repeat;
+}
+p{
+	padding: 3px 0 3px 0;
+}
+.container{
+	width: 100%;
+	margin: auto;
+	position: fixed;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+header{
+	color: #fff;
+}
+header h1{
+	font-family: 'Pacifico', cursive;
+	padding: 15px;
+	text-align: center;
+	margin-bottom: -40;
+	text-shadow: 1px 1px 1px #282813;
+}
+header h2{
+	font-family: 'Pacifico', cursive;
+	padding: 15px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #282813;
+}
+a:link{
+	color: #fff;
+}
+
+/*Navigation*/
+nav a:link{
+	display: block;
+	margin: auto;
+	background-color: #8F8856;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px;
+	width: auto;
+	height: auto;
+}
+nav a:visited{
+	color: #fff;
+}
+nav a:hover{
+	background-color: #282813;
+}
+
+/*columns*/
+img{
+	max-width: 100%;
+}
+h2{
+	text-align: center;
+}
+h3{
+	text-align:center;
+	margin-bottom: 5px;
+}
+article{
+	text-align: center;
+	border-bottom: 1px solid #8F8856;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+}
+article h3{
+	font-weight: lighter;
+	text-align: right;
+}
+figure{
+	text-align:center;
+	width: auto;
+}
+.columns{
+		margin: auto;
+		width: 100%;
+		height: auto;
+		margin-top: 15px;
+	}
+.column1{
+	width: 90%;
+	margin: auto;
+	padding: 15px;
+	background-color: #fff;
+	border: 2px #282813 solid;
+}
+.column2{
+	width: 90%;
+	margin: auto;
+	padding: 15px;
+	margin-top: 15px;
+	background-color: #fff;
+	border: 2px #282813 solid;
+}
+.column3{
+	width: 90%;
+	margin: auto;
+	padding: 15px;
+	margin-top: 15px;
+	background-color: #fff;
+	border: 2px #282813 solid;
+}
+.column3 h2{
+	border-bottom: 1px solid #8F8856;
+	margin-bottom: 30px;
+}
+
+/*hides*/
+.column2 figure{
+	display: none;
+}
+.column3 figure{
+	display: none;
+}
+
+/*footer*/
+footer{
+	width: 90%;
+	margin: auto;
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	border: 2px #282813 solid;
+	text-align: center;
+}
+
+
+/*Media Queries*/
+@media screen and (min-width: 600px){
+	/*Navigation*/
+	nav {
+		background-color: #8F8856;
+		text-align: center;
+		margin: auto;
+	}
+	nav li{
+		display: inline-block;
+	}
+	nav a:link{
+		text-decoration: none;
+		padding: 15px;
+	}
+	
+	/*Header*/
+	header h1{
+		font-size: 3em;
+	}
+	header h2{
+		font-size: 2em;
+	}
+
+	
+	/*columns*/
+	.columns{
+		margin: auto;
+		width: 100%;
+		height: 100%;
+		margin-top: 15px;
+		margin-bottom: 150px;
+		float: none;
+	}
+	.column1{
+		float: left;
+		width: 40%;
+		margin: 5px;
+	}
+	.column2{
+		float: right;
+		width: 40%;
+		margin: 5px;
+	}
+	.column3{
+		width: 90%;
+		margin: auto;
+	}
+	footer{
+		width: 90%;
+	}
+	
+	/*unhide*/
+	.column2 figure{
+		display: block;
+	}
+	.column3 figure{
+		display: block;
+	}
+}
+@media screen and (min-width: 1024px){
+	
+	.columns{
+		float: left;
+		width: 65%;
+		margin-top: 15px;
+		margin-bottom: 50px;
+	}
+	.column1{
+		float: left;
+		width: 42%;
+		margin: 5px;
+	}
+	.column2{
+		float: right;
+		width: 42%;
+		margin: 5px;
+	}
+	.column3{
+		float: right;
+		width: 30%;
+		margin: 5px;
+		margin-top: 15px;
+	}
+	footer{
+		clear: both;
+	}
+	
+}

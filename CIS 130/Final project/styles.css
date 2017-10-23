@@ -1,0 +1,308 @@
+/*Final Project
+Authors: 
+	Victoria Braden
+	Melissa Perritt
+Filename: styles.css
+Date: May 8th, 2017*/
+
+/*Clear out*/
+body, h1, h2, section, p, header, .row, .jumbotron, .container, .col-sm-3, .col-sm-9, legend{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*main body*/
+body{
+	background-color: #013900;
+	background-image: url('images/grassbg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container{
+	margin: auto;
+	position: fixed;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.container .jumbotron{
+	border-radius: 0px;
+}
+.jumbotron h1{
+	margin: 0;
+	padding: 0;
+}
+.jumbotron{
+	background-color: #3d8600;
+	position: relative;
+	z-index: 10;
+	box-shadow: 0px 3px 5px rgba(42,63,42,0.5);
+}
+header{
+	background-image: url('images/scissors_lg.png');
+	height: 280px;
+}
+header h1{
+	position: absolute;
+	top: 25px;
+	right: 2px;
+	text-shadow: -1px 1px #ffffff;
+}
+.tag{
+	position: absolute;
+	top: 0;
+	right: 5px;
+}
+p{
+	margin: 2px 0;
+}
+
+section a{
+	color: #3f653f;
+}
+section a:hover{
+	color: #3f653f;
+	text-decoration: underline;
+}
+
+/*forms*/
+legend{
+	margin-top: 5px;
+	font-size: 1.2em;
+}
+legend h2{
+	margin: 0px;
+}
+h2{
+	padding-top: 10px;
+	margin: 5px 0;
+}
+.quickquote{
+	margin-bottom: 20px;
+}
+
+/*navigation*/
+.navbar{
+	margin-bottom: 0px;
+}
+.container .sidebar-nav .navbar{
+	border-radius: 0px;
+	border: none;
+}
+.main-row{
+	background-color: #3f653f;
+	height: auto;
+}
+.sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: 100%;
+	overflow: hidden;
+	background-color: #3f653f;
+}
+.sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+}
+.sidebar-nav .navbar li {
+    float: none;
+    display: block;
+}
+.sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+	color: #ffffff;
+}
+.sidebar-nav .navbar li a:hover {
+    padding-top: 12px;
+    padding-bottom: 12px;
+	background-color: #9dca3c;
+}
+
+
+/*columns*/
+section {
+	background-color: #ffffff;
+	height: 100%;
+}
+.quotebtn{
+	float: right;
+	position: relative;
+	top: 15px;
+	right: 15px;
+	z-index: 11;
+}
+.quotebtn a{
+	color: #ffffff;
+}
+.col-lg-5, .col-md-12, .col-lg-7{
+	margin-top: 45px;
+	margin-bottom: 35px;
+}
+
+/*reviews*/
+.review{
+	margin: 5px;
+	padding: 20px;
+}
+.review:nth-child(even){
+	background-color: rgba(42,63,42,0.1);
+}
+figure{
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+
+
+/*footer*/
+footer{
+	width: inherit;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	background-color: #3d8600;
+	position: relative;
+	z-index: 10;
+	box-shadow: 0px -3px 5px rgba(42,63,42,0.5);
+	color: #eeffe0;
+}
+footer li{
+	display: block;
+	text-decoration: none;
+}
+footer a:link{
+	color: #eeffe0;
+	margin: 5px;
+}
+footer a:visited{
+	color: #b7d79c;
+	text-decoration: none;
+}
+footer p:last-child{
+	margin-top: 5px;
+}
+
+/*gallery*/
+.biggal{
+	margin-top: 20px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+	margin: 10px;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 13px;
+    text-align: center;
+	font-size: 1.3em;
+}
+* {
+    box-sizing: border-box;
+}
+.responsive {
+	width: 49.99999%;
+	margin: 6px 0;
+	float: left;
+}
+.grouppic{
+	width: 60%;
+	box-shadow: 2px 2px 3px rgba(42,63,42,0.5);
+}
+.front{
+	border-radius: 100%;
+}
+.center{
+	margin: 10px;
+	text-align: center;
+}
+
+/*misc*/
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.quickquote{
+	display: none;
+}
+.action{
+	text-align: center;
+	font-weight: bold;
+}
+.action p:first-child{
+	font-size: 1.5em;	
+}
+.emphasis{
+	font-weight: bold;
+}
+
+/*media queries*/
+@media only screen and (max-width : 767px) {
+    .sidebar-nav .navbar .navbar-collapse {
+		text-align: center;
+    } 
+	.will-hide{
+		display: none;
+	}
+	header h1{
+		padding: 15px;
+	}
+	header{
+		background-image: url('images/scissors_sm.png');
+		height: 100px;
+	}
+	.sidebar-nav .navbar .navbar-collapse {
+		background-color: #ffffff;
+	}
+	.sidebar-nav .navbar ul {
+		float: none;
+		display: block;
+	}
+	.sidebar-nav .navbar li {
+		float: none;
+		display: block;
+	}
+	.sidebar-nav .navbar li a {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		color: inherit;
+	}
+	.sidebar-nav .navbar li a:hover {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		background-color: rgba(42,63,42,0.3);
+	}
+	.responsive {
+        width: 100%;
+    }
+	.grouppic{
+		display: none;
+	}
+	.review h2{
+		font-size: 1.5em;
+	}
+}
+@media only screen and (min-width : 992px) {
+	.responsive {
+		padding: 0 6px;
+		width: 24.99999%;
+	}
+}
+@media only screen and (min-width : 1200px) {
+	#getquote{
+		display: none;
+	}
+	.quickquote{
+		display: block;
+	}
+	
+}

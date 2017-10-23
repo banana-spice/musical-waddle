@@ -1,0 +1,157 @@
+/*	Victoria Braden
+	Practice Responsive Design
+	practice-styles.css
+	CIS 130
+	4/3/2017*/
+
+/*clear*/
+body, header, footer, ul, li, p, .container, .column1, .column2, article, a {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+/*Default*/
+body{
+	font-family: sans-serif;
+	background-color: #cc99ff;
+	color: #000;
+}
+.container{
+	width: 70%;
+	margin: auto;
+	position: fixed;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+section img{
+	float:left;
+	margin: -20px 50px 0 0;
+	width: 400px;
+}
+ul{
+	color:#e80450;
+	list-style-position: inside;
+}
+h1{
+	text-align: center;
+	color: #eeeeff;
+	font-weight: bolder;
+	font-size: 3em;
+	background-color: rgba(75, 0, 225, 0.7);
+	width: 100%;
+}
+.column1{
+	float: left;
+	background-color: rgba(204, 204, 225, 0.7);
+	padding: 10px;
+	width: 15%;
+	border-radius: 15px;
+	margin: 75px 5px 20px 5px;
+}
+section{
+	float: left;
+	background-color: rgba(204, 204, 225, 0.7);
+	padding: 10px;
+	margin: 75px 5px 20px 5px;
+	width: 60%;
+	border-radius: 15px;
+}
+.column2{
+	background-color: rgba(204, 204, 225, 0.7);
+	padding: 10px;
+	width: 15%;
+	float: left;
+	border-radius: 15px;
+	margin: 75px 5px 20px 5px;
+}
+footer{
+	margin-top: 50px;
+	clear:both;
+	text-align:center;
+	color: #eeeeff;
+	background-color: rgba(75, 0, 225, 0.7);
+	padding: 3px 0 3px 0;
+}
+li{
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 175%;
+}
+section ul{
+	list-style: square inside url("aipom.png");
+}
+nav{
+	list-style-type:none;
+	height: auto;
+	background-color: rgba(187, 187, 243, 0.7);
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+nav li{
+	display: inline-block;	
+	padding: 10px 0 10px 0; 
+	text-align: center;	
+}
+nav a:link{
+	padding: 15px; 
+	color: #fff;
+	text-decoration: none;
+}
+nav a:visited{
+	color: #eeeeff;
+	text-decoration: none;
+}
+nav a:hover{
+	color: #fff;
+	background-color: rgba(204, 204, 225, 0.7);
+	text-decoration: none;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 500px) {
+	.column2{
+		display: none;
+	}
+	.column1{
+		display: none;
+	}
+	section img{
+		display: none;
+	}
+	h1{
+		font-size: 1.2em;
+	}
+	section{ 
+		width: 100%;
+		margin: 5px;
+	}
+	nav li{
+		display: block;
+	}
+	li{
+		font-size: 0.8em;
+	}
+	section ul{
+		list-style: none;
+	}
+}
+
+@media screen and (max-width:1300px){
+	.column2{
+		display: none;
+	}
+	section img{
+	width: 200px;
+	}
+	h1{
+		font-size: 2em;
+	}
+	li{
+		font-size: 0.9em
+	}
+}

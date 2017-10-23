@@ -1,0 +1,75 @@
+/*Victoria Braden
+CIS 130
+3/27/2017
+Schedule Table*/
+
+body, header, footer, nav, table, li, a, .container{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #81d8fa;
+	color: #440e62;
+}
+.container{
+	background-color: #caecfe;
+	max-width: 800px;
+	margin: auto;
+	position: relative;
+	top: 3.5em;
+	padding-top: 20px;
+}
+header{
+	color: #caecfe;
+	background-color: #003663;
+	border-bottom: 3px solid #440e62;
+	max-width: 800px;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	padding: 5px 0 5px 0;
+}
+nav{
+	text-align: center;
+	margin: auto;
+}
+nav li{
+	display: inline-block;
+	color: #caecfe;
+	padding: 5px;
+}
+a{
+	text-decoration: none;
+	border: 1px solid #fff;
+	padding: 10px;
+}
+a:link {color:#CAECFE}
+a:visited {color:pink;}
+a:hover {
+	color:green;
+	background-color: navy;
+}
+table{
+	margin: 20px;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border: 3px double #440e62;
+}
+thead {
+	background-color:#89949f;
+	color: #ffffff;
+}
+td {
+	border: 1px solid #440e62;
+	font-size: 1.2em;
+	padding: 5px;
+	text-align: center;
+}
+footer{
+	color: #caecfe;
+	background-color: #003663;
+	clear: both;
+	padding: 10px;
+	text-align: center;
+	border-top: 3px solid #440e62;
+}

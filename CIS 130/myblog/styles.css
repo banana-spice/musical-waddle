@@ -1,0 +1,97 @@
+/*Victoria Braden
+	CIS 130
+	My Blog*/
+
+body, header, footer, section, nav, h1, h2, p, h3, .container {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url('images/startile.gif');
+	font-family: 'Josefin Sans', sans-serif;
+	color: #ffffff;
+}
+.container{
+  width:80%;
+  margin: auto;
+  /*Special trick to make the container as big as the screen*/
+  position: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+header{
+	background-color: rgba(201, 116, 184, 0.8);
+	padding: 15px;
+	margin-bottom: 30px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+h1{
+	font-family: 'Tangerine', cursive;
+	font-size: 3em;
+	font-weight: bolder;
+}
+.tagline{
+	font-family: 'Tangerine', cursive;
+	font-size: 2em;
+}
+.datestamp{
+	font-size: .8em;
+	margin-bottom: 10px;
+}
+.banned{
+	color: #36002b;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-shadow:1px 1px 2px red;
+}
+nav{
+	margin: 10px 0 0 0;
+	text-align: center;
+	font-weight: bold;
+}
+nav a{
+	display: inline-block;
+	padding: 5px;
+	font-size: 1.2em;
+}
+a:link{
+	color: #88d6f1;
+	text-decoration: none;
+}
+a:visited{
+	color: #88d6f1;
+}
+a:hover{
+	color: #404aaf;
+}
+section{
+	background-color: rgba(201, 116, 184, 0.8);
+	border-radius: 15px;
+	margin: 30px;
+	padding: 20px;
+	border: 2px solid #371352;
+}
+figure{
+	width: 100px;
+	float:left;
+}
+figcaption{
+	text-align:left;
+	
+}
+.clearfix:after{
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+footer{
+	text-align: center;
+	font-family: 'Tangerine', cursive;
+	font-size: 2em;
+}

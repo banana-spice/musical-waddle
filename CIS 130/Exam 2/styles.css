@@ -1,0 +1,87 @@
+/*Victoria Braden
+	CIS 130
+	Exam 2
+	styles.css*/
+
+/*clear*/
+body, .container, nav, article, li, p, h2, h3, figure{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*navigation*/
+nav{
+	width: 100%;
+	font-size: 2em;
+	text-align: center;
+}
+li{
+	display: inline-block;
+	padding: 15px;
+}
+nav li a:link{
+	color: #6666ff;
+	text-decoration: none;
+}
+nav li a:visited{
+	color: #006699;
+}
+nav li a:hover{
+	color: #000000;
+}
+nav li a:active{
+	color: #ff0000;
+}
+
+/*main content*/
+body{
+	background-color: #0066ff;
+	font-family: sans-serif;
+}
+.container{
+	background-color: #ff6600;
+	width: 80%;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/*movie listings*/
+article{
+	background-color: #666666;
+	border-radius: 15px;
+	margin: 20px;
+	padding: 20px;
+	font-size: 1.2em;
+}
+figure{
+	margin: 5px 20px;
+}
+h2{
+	font-size: 1.8em;
+	margin: 10px 0 10px 0;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clearfix::after{
+	content: " ";
+	clear: both;
+	display: table;
+}
+.movie a:link{
+	color: #000000;
+	text-decoration: none;
+}
+.movie a:visited{
+	color: #000000;
+}
+.movie:hover{
+	background-color: #888888;
+}

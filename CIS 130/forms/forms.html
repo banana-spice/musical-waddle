@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms</title>
+		<link rel="stylesheet" href="formstyles.css">
+	</head>
+	<body>
+		<form method="get" action="thankyou.html">
+		
+			<fieldset><legend>Contact Info:</legend>
+				<label for="contact">Enter Name:
+					<input type="text" name="custName" id="contact" placeholder="First and Last Name" required>
+				</label>
+				<label for="phoneNum">Enter Phone#:
+					<input type="text" name="phone" id="phoneNum" placeholder="Phone Number" required>
+				</label>
+			</fieldset>
+			
+			<fieldset><legend>Fall 2017 Classes</legend>
+				<label for="cis131">CIS 131
+					<input type="checkbox" id="cis131" name="131">
+				</label>
+				<label for="cis131">CIS 170
+					<input type="checkbox" id="cis170" name="170" value="170"checked>
+				</label>
+			</fieldset>
+			
+			<fieldset><legend>Course Offerings</legend>
+				<label for="morn">Morning
+					<input type="radio" name="classTimes" id="morn" value="morning">
+				</label>
+				<label for="aft">Afternoon
+					<input type="radio" name="classTimes" id="aft" value="afternoon">
+				</label>
+			</fieldset>
+			
+			<fieldset><legend>Great Kudos!</legend>
+				<textarea cols="55" rows="4" name="additionalInfo" id="addInfo" placeholder="Kudos Here!"></textarea>
+			</fieldset>
+			
+			<input type="submit" value="Submit Form">
+			
+		</form>
+	</body>
+</html>

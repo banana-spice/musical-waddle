@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Final Project
+			Authors: 
+				Victoria Braden
+				Melissa Perritt
+			Filename: thankyou.html
+			Date: May 8th, 2017 -->
+		<title>417 Lawn Salon - Form Submit</title>
+		<meta charset="utf-8">
+		<meta name="veiwport" content="width=device-width">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/favicon.png">
+		<link rel="icon" sizes="192x192" href="images/favicon.png">
+		<script src="formSubmit.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!--4/26/2017; Spice alone-->
+				<header class="jumbotron">
+					<h1>417 Lawn Salon</h1>
+					<p class="tag">1-800-MOW-LAWN</p>
+				</header>
+			<div class="row main-row">
+				<div class="col-sm-3">
+					<div class="sidebar-nav">
+						<div class="navbar navbar-default" role="navigation">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<span class="visible-xs navbar-brand">Menu</span>
+							</div>
+							<div class="navbar-collapse collapse sidebar-navbar-collapse">
+									<ul class="nav navbar-nav">
+										<li><a href="index.html" class="active">Home</a></li>
+										<li><a href="services.html">Lawn Services</a></li>
+										<li><a href="gallery.html">Work Gallery</a></li>
+										<li><a href="contact.html">About Us</a></li>
+									</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="col-sm-9">
+					<div class="quotebtn clearfix"><a href="contact.html" class="btn btn-warning" role="button">Get a Quote!</a></div>
+					<div class="row">
+						<article class="col-md-12">
+							<h2>Thank you for your input!</h2>
+							<p>We'll get back to you within the next business day!</p>
+							
+							<script>
+								writeData();
+							</script>
+						</article>
+					</div>
+				</section>
+			</div>
+			<footer itemtype="http://schema.org/LocalBusiness" itemscope>
+				<div class="row">
+					<div class="col-sm-4">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="services.html">Lawn Services</a></li>
+							<li><a href="gallery.html">Work Gallery</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<ul>
+							<li><a href="contact.html">About Us</a></li>
+							<li><a href="sitemap.html">Site Map</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<ul>
+							<li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+							<li><a href="http://twitter.com/" target="_blank">Twitter</a></li>
+							<li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+							<li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>							
+						</ul>
+					</div>
+				</div>
+				<p itemprop="name">417 Lawn Salon</p>
+				<p itemprop="address" item type="http://schema.org/PostalAddress" itemscope>
+					<span itemprop="streetAddress">42 Wallaby Way</span> &bull;
+					<span itemprop="addressLocality">Springfield</span>, 
+					<span itemprop="addressRegion">MO</span>
+					<span itemprop="postalCode">65802</span>
+				</p>
+				<p itemprop="telephone">1-800-MOW-LAWN</p>
+				<p>Copyright &copy; 2017 &bull; 417 Lawn Salon.</p>
+			</footer>
+		</div>
+	</body>
+</html>

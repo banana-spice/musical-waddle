@@ -1,0 +1,88 @@
+/*Victoria Braden
+filename: styles.css
+Shady Shades Sunglasses
+2.27.2017*/
+body, header, footer, article, aside, h1, h2, h3, p, .container {margin:0; padding: 0; border:0;}
+body{
+	background-color: #81d8fa;
+	color: #440e62;
+}
+.container{
+	background-color: #caecfe;
+	max-width: 640px;
+	margin: auto;
+	position: relative;
+	top: 6.2em;
+}
+header{
+	color: #caecfe;
+	background-color: #003663;
+	border-bottom: 3px solid #440e62;
+	width: 100%;
+	max-width: 640px;
+	position: fixed;
+	top: 0px;
+}
+h1{
+	padding: 0.92em;
+	text-align: center;
+}
+.logo{
+	position: absolute;
+	top: 2em;
+	left: 2em;
+	font-family: 'Yellowtail', cursive;
+}
+aside{
+	color: #6a0027;
+	float: left;
+	width: 30%;
+	padding: 15px;
+	font-size: 1.2em;
+}
+article{
+	padding: 10px;
+	float: right;
+	width: 60%;
+}
+article h2{
+	margin-bottom: 10px;
+}
+img{
+	margin: 10px;
+}
+footer{
+	color: #caecfe;
+	background-color: #003663;
+	clear: both;
+	padding: 10px;
+	text-align: center;
+	border-top: 3px solid #440e62;
+}
+aside a{
+	color: #9e0039;
+	display: block;
+	padding: 5px;
+}
+aside a:link{
+	color: #9e0039;
+}
+aside a:visited{
+	color: #dc004f;
+}
+aside a:hover{
+	color: #3399cc;
+}
+nav a{
+	text-decoration: none;
+	margin: 15px 15px;
+	display: inline-block;
+	padding: 15px;
+	border: 1px solid #fff;
+}
+a:link {color:yellow;}
+a:visited {color:pink;}
+a:hover {
+	color:green;
+	background-color: navy;
+}

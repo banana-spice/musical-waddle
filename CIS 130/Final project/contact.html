@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Final Project
+			Authors: 
+				Victoria Braden
+				Melissa Perritt
+			Filename: contact.html
+			Date: May 8th, 2017 -->
+		<title>Meet the Team - Contact Us</title>
+		<meta charset="utf-8">
+		<meta name="veiwport" content="width=device-width">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" href="images/favicon.png">
+		<link rel="icon" sizes="192x192" href="images/favicon.png">
+	</head>
+	<body>
+		<div class="container">
+			<!--4/26/2017; Spice alone-->
+				<header class="jumbotron">
+					<h1>417 Lawn Salon</h1>
+					<p class="tag">1-800-MOW-LAWN</p>
+				</header>
+			<div class="row main-row">
+				<div class="col-sm-3">
+					<div class="sidebar-nav">
+						<div class="navbar navbar-default" role="navigation">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<span class="visible-xs navbar-brand">Menu</span>
+							</div>
+							<div class="navbar-collapse collapse sidebar-navbar-collapse">
+									<ul class="nav navbar-nav">
+										<li><a href="index.html" class="active">Home</a></li>
+										<li><a href="services.html">Lawn Services</a></li>
+										<li><a href="gallery.html">Work Gallery</a></li>
+										<li><a href="contact.html">About Us</a></li>
+									</ul>
+							</div><!--/.nav-collapse -->
+						</div>
+					</div>
+				</div>
+				<section class="col-sm-9">
+					<div class="quotebtn clearfix"><a href="contact.html#getquoteform" class="btn btn-warning" role="button">Get a Quote!</a></div>
+					<div class="row">
+						<article class="col-md-12">
+							<h2>About 417 Lawn Salon</h2>							
+							<p>Our mission is to allow you to enjoy a cold one while watching the ball game this weekend, or perhaps go to the real salon and get your nails done. Leave the taxing lawn work to us!</p>
+							<p>With our affordabe prices, we will provide you with quality workmanship that will make you beam with pride and have your neighbors envy you!</p>
+							<div class="center">
+								<img class="grouppic" src="images/417_employees.jpg" alt="417 Lawn Salon Employees" >
+							</div>
+							<div class="action">
+								<p>Give us a call today!</p>
+								<p>1-800-Mow-Lawn</p>
+								<p>Or send us your contact information and we'll get back to you!</p>
+							</div>							
+							<form id="getquoteform" method="get" action="thankyou.html">
+								<fieldset><legend><h2>Contact Us!</h2></legend>
+									<label for="name">Name:
+										<input type="text" name="custName" id="name" placeholder="First and Last Name" required>
+									</label>
+									<label for="street">Street:
+										<input type="text" name="streetName" id="street" placeholder="Street Address" required>
+									</label>
+									<label for="city">City:
+										<input type="text" name="cityName" id="city" placeholder="City" required>
+									</label>
+									<label for="email">Email:
+										<input type="text" name="email" id="email" placeholder="Email Address" required>
+									</label>
+									<label for="phoneNum">Phone:
+										<input type="text" name="phone" id="phoneNum" placeholder="Phone Number" >
+									</label>																	
+									<label for="cell">Cell
+										<input type="radio" name="phonetype" id="cell" value="cell">
+									</label>
+									<label for="home">Home
+										<input type="radio" name="phonetype" id="home" value="home">
+									</label>
+									<label for="work">Work
+										<input type="radio" name="phonetype" id="work" value="work">
+									</label>
+								</fieldset>
+								<fieldset><legend>Reason for Contact?</legend>
+									<select id="contact" name="contact">
+										<option value="quote">Get a Quote</option>
+										<option value="question">Ask a Question</option>
+									</select>
+								</fieldset>
+								<fieldset><legend>Other Comments</legend>
+									<textarea cols="50" rows="4" name="additionalInfo" id="addInfo" placeholder="Kudos Here!"></textarea>
+								</fieldset>
+								<input type="submit" value="Submit Form">
+							</form>
+							
+						</article>
+					</div>
+				</section>
+			</div>
+			<footer itemtype="http://schema.org/LocalBusiness" itemscope>
+				<div class="row">
+					<div class="col-sm-4">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="services.html">Lawn Services</a></li>
+							<li><a href="gallery.html">Work Gallery</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<ul>
+							<li><a href="contact.html">About Us</a></li>
+							<li><a href="sitemap.html">Site Map</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4">
+						<ul>
+							<li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+							<li><a href="http://twitter.com/" target="_blank">Twitter</a></li>
+							<li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+							<li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>							
+						</ul>
+					</div>
+				</div>
+				<p itemprop="name">417 Lawn Salon</p>
+				<p itemprop="address" item type="http://schema.org/PostalAddress" itemscope>
+					<span itemprop="streetAddress">42 Wallaby Way</span> &bull;
+					<span itemprop="addressLocality">Springfield</span>, 
+					<span itemprop="addressRegion">MO</span>
+					<span itemprop="postalCode">65802</span>
+				</p>
+				<p itemprop="telephone">1-800-MOW-LAWN</p>
+				<p>Copyright &copy; 2017 &bull; 417 Lawn Salon.</p>
+			</footer>
+		</div>
+	</body>
+</html>
