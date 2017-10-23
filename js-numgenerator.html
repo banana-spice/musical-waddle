@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="clock"></div>
+		<input type="button" id="stopclock" value="Stop the Clock">
+
+		<script>
+			myTimer = setInterval(makeMess, 3000);
+			var clockDiv = document.getElementById("clock");
+			
+			
+			function makeMess(){
+				var randNum = Math.ceil(Math.random() * 5);
+				clockDiv.innerHTML += "The random number is " + randNum + "<br>";
+				
+			}
+			function stopTheClock (){
+				clearInterval(myTimer);
+				clockDiv.innerHTML = "Clock has ceased processing";
+			}
+			
+			document.getElementById("stopclock").addEventListener("click", stopTheClock, false);
+			
+		</script>
+	</body>
+</html>

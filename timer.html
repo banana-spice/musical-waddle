@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+  </head>
+  <body>
+    <div id="clock">
+
+    </div>
+    <input type="button" id="stops" />
+    <script>
+
+      var clockDiv = document.getElementById("clock");
+      myTimer = setInterval(makeMess, 3000);
+
+      function makeMess(){
+        var randNum;
+        randNum = Math.ceil(Math.random() * 5);
+        clockDiv.innerHTML += "The random number is " + randNum + "<br />";
+
+
+
+      }
+      function stopButton(){
+         clearInterval(myTimer);
+         clockDiv.innerHTML = "clock stopped";
+      }
+
+
+      // document.getElementById("stops").addEventListener("click", function(){
+      //   clearInterval (myTimer);
+      //   clockDiv.innerHTML = "clock anonumously stopped";
+      // }, false);
+
+
+      document.getElementById("stops").addEventListener("click", stopButton, false);
+
+    </script>
+  </body>
+</html>
