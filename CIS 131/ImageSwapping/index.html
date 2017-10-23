@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+
+      var aryImages = ["foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg"];
+      var aryID = ["foto1", "foto2", "foto3"];
+        function changeImage(varImage){
+          document.getElementById('bigImage').src=aryImages[varImage];
+        }
+    </script>
+  </head>
+  <body>
+    <table align="center">
+      <tr>
+        <td colspan="4" align="center">
+              <img src="foto1.jpg" id="bigImage" />
+        </td>
+      </tr>
+      <tr>
+        <script>
+           var aryLength = aryImages.length;
+           for (var i = 0; i < aryLength; i++){
+             var htmlString = "<td><img height='150' src='" + aryImages[i] + "' alt='" + i + "'  id='" + aryID[i] + "' onclick='changeImage(" + i + ")' /></td>";
+             document.write( htmlString );
+
+           }
+
+
+        </script>
+
+      </tr>
+      <tr>
+        <td colspan="4">
+          <p id="counter"></p>
+        </td>
+      </tr>
+    </table>
+
+
+
+
+
+  </body>
+</html>

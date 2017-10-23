@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        .container {width:600px;margin:auto;}
+        .photoContainer{text-align:center;width: 600px;}
+
+
+
+        img {padding-right: 2px;}
+        .thumbnails {text-align:center;width:600px;}
+
+    </style>
+    <script>
+
+      var aryImages = ["foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg"];
+      var aryID = ["foto1", "foto2", "foto3", "foto4"];
+        function changeImage(varImage){
+          document.getElementById('bigImage').src=aryImages[varImage];
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="photoContainer">
+
+        <script>
+           var htmlString2 = "<img src='" + aryImages[0] +   " ' id='bigImage'  />";
+           document.write(htmlString2);
+        </script>
+
+        <div class="thumbnails">
+            <script>
+               var aryLength = aryImages.length;
+               for (var i = 0; i < aryLength; i++){
+                  var htmlString = "<img height='150' src='" + aryImages[i] + "' alt='" + i + "'  id='" + aryID[i] + "' onclick='changeImage(" + i + ")' />";
+                 document.write( htmlString );
+               }
+
+
+            </script>
+        </div> <!-- end thumbnails -->
+      </div> <!-- end photoContainer -->
+    </div> <!-- end container -->
+
+
+
+
+
+  </body>
+</html>
