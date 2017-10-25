@@ -3,13 +3,29 @@ Date: 10.30.2017
 file: styles.css
 */
 
-html, body, h1, img, p, ul{
+html, body, h1, img, p, ul, header, .container{
 	margin: 0px;
 	padding: 0px;
 }
+body{
+	background-color: gray ;
+}
+.container{
+	background-color: white;
+	margin: auto;
+	position: fixed;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+header{
+	background-color: lightblue;
+	text-align: center;
+}
 h1{
 	padding: 1em;
-	text-align: center;
 	height: 3em;
 }
 .contacts{
