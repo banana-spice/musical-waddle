@@ -3,7 +3,7 @@ Date: 10.30.2017
 file: styles.css
 */
 
-html, body, h1, img, p, ul, header, .container{
+html, body, h1, img, p, ul, header, .container, .profile{
 	margin: 0px;
 	padding: 0px;
 }
@@ -21,7 +21,7 @@ body{
 	left: 0;
 }
 header{
-	background-color: lightblue;
+	background-color: #d5d7d8;
 	text-align: center;
 	box-shadow: 0px 3px 5px grey;
 }
@@ -35,7 +35,17 @@ h1{
 	color: blue;
 	margin-top: 1em;
 }
-
+.row{
+	margin-top: 3em;
+}
 ul{
 	list-style-type: none;
+}
+
+.profile{
+	margin-top: 1em;
+	background-color: #e4e6e7;
+	border: 15px solid #C8CCCF;
+	border-radius: 30px;
+	box-shadow: 0px 3px 5px grey;
 }
