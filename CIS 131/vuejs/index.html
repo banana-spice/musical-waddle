@@ -1,0 +1,76 @@
+<!--go to https://vuejs.org/ 
+
+    Directives:
+    v-model
+    v-bind
+    v-for
+    VUE Instance
+    el
+    data
+    methods
+    computed
+
+    Version 2!!
+    academind on youtube for tutorials
+-->
+<style>
+    .active {
+        background-color: greenyellow;
+    }
+</style>
+<script src="https://unpkg.com/vue"></script>
+<div id="app">
+    {{ message }}
+    <input v-model="message">
+    <p v-bind:class="{active:isActive}">Here is paragraph</p>
+    <button v-on:click = "changeTitle">Change</button>
+    <!-- v- is vue -->
+    <ul>
+        <li v-for="todo in todos">{{ todo.list }}</li>
+        <!-- does the same but less code as:
+        <li>{{ todos[0].list }}</li>
+        <li>{{ todos[1].list }}</li>
+        <li>{{ todos[2].list }}</li>-->
+    </ul>
+    <button v-on:click="increment">Increment Clicks</button>
+    <p>Clicks: {{clicks}}</p>
+    <p>Another: {{another}}</p>
+    <p>Computed: {{counter}}</p>
+    <button v-on:click="decrement">Decrease Clicks</button>
+</div>
+
+<script>
+    var app = new Vue({
+         //element in the page
+        el : "#app",
+        data : {
+            message : "Hello Vue!",
+            isActive : true,
+            todos : [
+                {list: "Learn html and CSS"},
+                {list: "Learn javascript"},
+                {list: "Learn Vue"}
+            ],
+            clicks: 0,
+            another: 0
+        },
+        methods : {
+            changeTitle(){
+                this.message = "message from the method"
+            },
+            increment(){
+                this.clicks++;
+                this.another = this.clicks + 5;
+            },
+            decrement(){
+                this.clicks--;
+                this.another = this.clicks - 5;
+            }
+        },
+        computed : {
+            counter(){
+                return this.another + 10;
+            }
+        }
+    })
+</script>
