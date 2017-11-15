@@ -7,7 +7,19 @@
     </head>
     <body>
         <div class="container">
-            <div id="app"></div>
+            <div id="app">
+                {{message}}
+            </div>
         </div>
+
+        <!--script for cart-->
+        <script>
+            var app = new Vue({
+                el: "#app",
+                data: {
+                    message: "Testing"
+                }
+            })
+        </script>
     </body>
 </html>
